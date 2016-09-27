@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+<!-- endbower -->
+
+<!-- inject:css -->
+<link rel="stylesheet" href="/app/styles/styles.css">
+<!-- endinject -->
+
+<body class="container bg-warning">
+	<fieldset>
+		<h1 class="text-center">Change Calculator</h1>
+	</fieldset>
+
+		<div class="row" id="inputbox">
+			<div class="col-sm-6 text-center">
+				<label>How much is due for the sale?</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>	
+					<input type="text" id="sale" placeholder="Amount" class="form-control"></input>
+				</div>
+			</div>
+		
+			<div class="col-sm-6 text-center">
+				<label>How much has the customer given you?</label>
+					<div class="input-group">
+						<div class="input-group-addon">$</div>
+						<input type="text" id="given" placeholder="Amount" class="form-control"></input>
+					</div>
+			</div>
+		</div><br>
+
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="col-sm-4 col-sm-offset-4 control-label" id="buttonbox">
+					<button type="button" class="btn btn-warning form-control animated infinite pulse" id="button">Calculate</button>
+				</div>
+			</div><br>
+		</form>
+
+		<div class="row" id="changebox">
+			<div class="col-xs-6 col-sm-3 text-center">
+				<label>Quarters</label>
+					<pre id="quarters">	</pre>
+			</div>
+			
+			<div class="col-xs-6 col-sm-3 text-center">
+				<label>Dimes</label>
+					<pre id="dimes">	</pre>
+			</div>
+		
+			<div class="col-xs-6 col-sm-3 text-center">
+				<label>Nickels</label>
+					<pre id="nickels">	</pre>
+			</div>
+		
+			<div class="col-xs-6 col-sm-3 text-center">
+				<label>Pennies</label>
+					<pre id="pennies">	</pre>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-sm-6 text-center">
+				<label>Dollars</label>
+					<pre id="dollars"> 	</pre>
+			</div>
+
+			<div class="col-sm-6 text-center">
+			<label>Total Change</label>
+					<pre id="change">
+					</pre>
+			</div>
+		
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+
+<!-- inject:js -->
+<script src="/app/index.js"></script>
+<!-- endinject -->
+</body>
+</html>
